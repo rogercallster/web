@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+
+<head>
+	<title>data bind</title>
+	<link href="lib/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container" ng-init="title='GlideVar';
+									awesome=true; variable='none'">
+		<h1>{{ title + " "+variable}} is var: {{awesome}}</h1>
+		<input type="text" class="form-control" ng-model="title" />
+		<input type="text" class="form-control" ng-model="variable" />
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+</body>
+
+</html>
